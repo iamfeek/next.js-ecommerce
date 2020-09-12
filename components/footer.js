@@ -6,10 +6,9 @@ import {
   FaYoutube,
   FaCcVisa,
   FaCcMastercard,
-  FaCcPaypal,
-  FaCcAmazonPay,
 } from 'react-icons/fa';
 import Logo from './logo';
+import {config} from '../config/config';
 
 export default function Fotter() {
   return (
@@ -57,7 +56,7 @@ export default function Fotter() {
       </div>
       <div className="footer footer-bottom">
         <div className="texts">
-          <p>© 2016. Quantum UI kit</p>
+          <p>© {new Date().getFullYear()}. {config.SITE_TITLE}</p>
           <p>Privacy Policy</p>
           <p>Terms of Use</p>
         </div>
@@ -69,12 +68,6 @@ export default function Fotter() {
             </div>
             <div>
               <FaCcMastercard color="#424242" size="32px" />
-            </div>
-            <div>
-              <FaCcPaypal color="#424242" size="32px" />
-            </div>
-            <div>
-              <FaCcAmazonPay color="#424242" size="32px" />
             </div>
           </div>
         </div>

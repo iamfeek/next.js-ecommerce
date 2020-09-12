@@ -1,16 +1,18 @@
 import Head from 'next/head';
 
+import { config } from '../config/config';
+
 export default function PageContainer({ title, description, children }) {
   return (
     <div className="container">
       <Head>
-        <title>{title || 'Quantum  E-commerce - Next Project'}</title>
+        <title>{title || config.SITE_TITLE}</title>
         {description !== false && (
           <meta
             name="description"
             content={
               description ||
-              'Quantum E-commerce made with Next.js open-source project.'
+              config.SITE_DESCRIPTION
             }
           />
         )}
