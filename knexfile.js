@@ -1,8 +1,11 @@
 module.exports = {
   development: {
-    client: 'sqlite3',
+    client: 'pg',
     connection: {
-      filename: './db/db.sqlite',
+      host: '127.0.0.1',
+      user: 'unicorn_user',
+      password: 'magical_password',
+      database: 'rainbow_database'
     },
     migrations: {
       directory: './db/migrations',
