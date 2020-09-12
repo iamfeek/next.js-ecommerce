@@ -13,14 +13,14 @@ exports.seed = async function (knex) {
           name: 'admin',
           email: 'admin@admin.com',
           password: cryptoPassword,
-          createdAt: Date.now(),
+          createdAt: new Date(),
         },
         {
           id: 2,
           name: 'test',
           email: 'test@test.com',
           password: cryptoPassword,
-          createdAt: Date.now(),
+          createdAt: new Date()
         },
       ]);
     });
